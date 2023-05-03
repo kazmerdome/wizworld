@@ -38,10 +38,10 @@ func (r *ElixirCommand) addElixirCommand() *cobra.Command {
 
 			// Handle not found/empty list
 			if len(elixirs) < 1 {
-				color.Red("no elixirs found with the requested ingredient(s): %s.", ingredients)
-				color.Black(`If you are not sure about the correct name of the ingredient,
-use "wizworld ingredients" command to get a list of ingredients.
-Note that the names of the ingredients are case sensitive!
+				color.Red("No elixirs were found that contain the requested ingredient(s): %s.", ingredients)
+				color.Black(`If you're unsure of the correct name for the ingredient,
+use the 'wizworld ingredients' command to get a list of ingredients.
+Note that ingredient names are case-sensitive.
 				`)
 			}
 
