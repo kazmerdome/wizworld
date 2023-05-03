@@ -54,7 +54,6 @@ Note that the names of the ingredients are case sensitive!
 				for _, elixir := range elixirs {
 					elixirTbl.AddRow(elixir.Name, elixir.Difficulty, elixir.Id)
 				}
-				// elixirTbl.Print()
 				elixirTbl.WithWriter(log.Writer())
 				elixirTbl.Print()
 			}
@@ -63,7 +62,6 @@ Note that the names of the ingredients are case sensitive!
 	}
 
 	command.Flags().StringVarP(&ingredientsFlagValue, "ingredients", "i", "", "Single or multiple ingredients, separated by ,")
-	// command.MarkFlagRequired("ingredients")
 	return command
 }
 
