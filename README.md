@@ -142,9 +142,6 @@ Driven (or secondary) actors are the ones that are “kicked into behavior” by
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <br/>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-<br/>
-
 ## Assumptions, notes and todos
 
 - The Ingredient query parameter of the https://wizard-world-api.herokuapp.com/Elixirs endpoint is only works with a single ingredient. In order to filter by multiple ingredients, I added additional logic to the code (service.go)
